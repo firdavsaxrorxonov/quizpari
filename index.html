@@ -1,0 +1,166 @@
+<!doctype html>
+<html lang="uz">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="theme-color" content="#fff8f5">
+    <meta name="description" content="Senga atalgan kichkina, mehrga to‘la maktub.">
+    <title>Senga atalgan maktub</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+  </head>
+  <body>
+    <div class="ambient ambient--one" aria-hidden="true"></div>
+    <div class="ambient ambient--two" aria-hidden="true"></div>
+    <div class="sparkles" aria-hidden="true">
+      <span>✦</span><span>♡</span><span>✧</span><span>✦</span><span>♡</span>
+    </div>
+
+    <main class="experience">
+      <header class="topbar">
+        <a class="wordmark" href="#" aria-label="Boshiga qaytish">
+          <span class="wordmark__icon" aria-hidden="true">♡</span>
+          <span>faqat sen uchun</span>
+        </a>
+        <div class="progress" aria-label="Saytdagi bosqichlar">
+          <span class="progress__step is-active" data-progress="1">01</span>
+          <span class="progress__line"></span>
+          <span class="progress__step" data-progress="2">02</span>
+          <span class="progress__line"></span>
+          <span class="progress__step" data-progress="3">03</span>
+        </div>
+      </header>
+
+      <section class="scene scene--intro is-visible" data-scene="1" aria-labelledby="intro-title" tabindex="-1">
+        <div class="intro-art" aria-hidden="true">
+          <div class="orbit orbit--outer"></div>
+          <div class="orbit orbit--inner"></div>
+          <div class="heart-glow">♡</div>
+          <span class="orbit-dot orbit-dot--one">✦</span>
+          <span class="orbit-dot orbit-dot--two">✧</span>
+          <span class="orbit-dot orbit-dot--three">·</span>
+        </div>
+        <p class="eyebrow"><span class="eyebrow__line"></span> kichkina bir syurpriz <span class="eyebrow__line"></span></p>
+        <h1 id="intro-title">Senga atalgan<br><span>kichkina koinot</span></h1>
+        <p class="intro-copy">Shoshilma. Bu yerda sen uchun bir nechta iliq so‘z va bitta yurakdan chiqqan maktub bor.</p>
+        <button class="button button--primary" type="button" data-go="2">
+          <span>Syurprizni ochish</span><span class="button__arrow" aria-hidden="true">↗</span>
+        </button>
+        <p class="tiny-note"><span aria-hidden="true">♡</span> Eng yaxshi qismi oxirida</p>
+      </section>
+
+      <section class="scene scene--reasons" data-scene="2" aria-labelledby="reasons-title" tabindex="-1" hidden>
+        <p class="eyebrow"><span class="eyebrow__line"></span> 01 — mayda, ammo muhim <span class="eyebrow__line"></span></p>
+        <h2 id="reasons-title">Senda yoqadigan<br><span>uchta narsa</span></h2>
+        <p class="scene-copy">Har bir yurakchani bos. Ichida senga aytmoqchi bo‘lgan bir gapim bor.</p>
+
+        <div class="reason-grid">
+          <button class="reason-card" type="button" aria-expanded="false">
+            <span class="reason-card__number">01</span>
+            <span class="reason-card__heart" aria-hidden="true">♡</span>
+            <span class="reason-card__title">Tabassuming</span>
+            <span class="reason-card__reveal">Kuning qanday o‘tgan bo‘lmasin, tabassuming hammasini bir zumda chiroyli qiladi.</span>
+            <span class="reason-card__hint">ochish uchun bos <span aria-hidden="true">↗</span></span>
+          </button>
+          <button class="reason-card" type="button" aria-expanded="false">
+            <span class="reason-card__number">02</span>
+            <span class="reason-card__heart" aria-hidden="true">♡</span>
+            <span class="reason-card__title">Mehring</span>
+            <span class="reason-card__reveal">Atrofingdagi odamlarga beradigan mehring — sendagi eng go‘zal fazilatlardan biri.</span>
+            <span class="reason-card__hint">ochish uchun bos <span aria-hidden="true">↗</span></span>
+          </button>
+          <button class="reason-card" type="button" aria-expanded="false">
+            <span class="reason-card__number">03</span>
+            <span class="reason-card__heart" aria-hidden="true">♡</span>
+            <span class="reason-card__title">Aynan o‘zing</span>
+            <span class="reason-card__reveal">Seni o‘zgartirmasdan, borligingcha yaxshi ko‘raman. Shunchaki sen bo‘lganing uchun.</span>
+            <span class="reason-card__hint">ochish uchun bos <span aria-hidden="true">↗</span></span>
+          </button>
+        </div>
+
+        <p class="unlock-message" aria-live="polite">Uchalasini ham ochsang, keyingi sahifa paydo bo‘ladi <span aria-hidden="true">♡</span></p>
+        <button class="button button--primary button--locked" type="button" data-go="3" disabled>
+          <span>Maktubimni o‘qish</span><span class="button__arrow" aria-hidden="true">↗</span>
+        </button>
+        <button class="text-button" type="button" data-go="1">← boshiga qaytish</button>
+      </section>
+
+      <section class="scene scene--letter" data-scene="3" aria-labelledby="letter-title" tabindex="-1" hidden>
+        <p class="eyebrow"><span class="eyebrow__line"></span> 02 — yuragimdan senga <span class="eyebrow__line"></span></p>
+        <div class="letter">
+          <div class="letter__top"><span>faqat sen uchun</span><span aria-hidden="true">♡</span></div>
+          <p class="letter__salutation">Sevgilim,</p>
+          <h2 id="letter-title">Ba’zi gaplarni<br>aytib turish kerak.</h2>
+          <div class="letter__body">
+            <p>Hayotimda borliging uchun rahmat. Ba’zan oddiy bir xabaring, ovozing yoki yonimda ekaning kunimni butunlay o‘zgartirib yuboradi.</p>
+            <p>Seni qadrlashimni har doim ham yetarlicha aytolmasam kerak. Shuning uchun bugun eslatib qo‘ymoqchiman: sen men uchun juda azizsan. Borligingning o‘zi katta baxt.</p>
+            <p>Oldimizda hali birga kuladigan, eslaydigan va orzu qiladigan chiroyli kunlar ko‘p bo‘lsin. Men ularni sen bilan kutib olishni xohlayman.</p>
+          </div>
+          <p class="letter__signoff">Mehr bilan, <span>doim seni o‘ylaydigan insoning</span></p>
+          <div class="letter__stamp" aria-hidden="true">f♡s</div>
+        </div>
+        <p class="final-prompt">Sovg‘ani ochish uchun biologiya bilimlaringni sinab ko‘r. To‘g‘ri javoblar coin olib keladi!</p>
+        <button class="button button--primary" type="button" data-open-game>
+          <span>Love quizni boshlash</span><span class="button__arrow" aria-hidden="true">♡</span>
+        </button>
+        <button class="text-button" type="button" data-go="2">← yana bir bor o‘qish</button>
+      </section>
+
+      <section class="game-overlay" role="dialog" aria-modal="true" aria-labelledby="quiz-title" aria-describedby="quiz-description" hidden>
+        <button class="game-close" type="button" aria-label="O‘yinni yopish">×</button>
+        <div class="game-card">
+          <div class="game-topline">
+            <span class="game-brand"><span aria-hidden="true">♡</span> LOVE QUIZ</span>
+            <span class="coin-counter" aria-label="Yig‘ilgan coinlar"><span aria-hidden="true">✦</span> <span data-coins>0</span></span>
+          </div>
+          <div class="gift-progress">
+            <div class="gift-progress__labels"><span>Sovg‘agacha</span><span><span data-progress-coins>0</span> / 50 coin</span></div>
+            <div class="gift-progress__track"><span data-progress-bar></span></div>
+          </div>
+          <p class="eyebrow"><span class="eyebrow__line"></span> bilim + mehr = sovg‘a <span class="eyebrow__line"></span></p>
+          <h2 id="quiz-title">Yuraging <span>bilimdonmi?</span></h2>
+          <p class="game-description" id="quiz-description">6-, 7- va 8-sinf biologiyasidan savollar. Har to‘g‘ri javobga <strong>10 coin</strong>!</p>
+          <div class="quiz-round" data-quiz-round>
+            <div class="quiz-meta"><span data-question-count>1 / 6</span><span class="grade-badge" data-question-grade>6-sinf</span></div>
+            <div class="question-track" aria-hidden="true"><span data-question-progress></span></div>
+            <h3 class="quiz-question" data-question tabindex="-1"></h3>
+            <div class="answer-list" data-answers></div>
+            <p class="answer-feedback" data-feedback aria-live="polite"></p>
+            <button class="button button--primary quiz-next" type="button" data-next-question hidden>
+              <span>Keyingi savol</span><span class="button__arrow" aria-hidden="true">→</span>
+            </button>
+          </div>
+          <div class="round-complete" data-round-complete hidden>
+            <div class="round-complete__icon" aria-hidden="true">✿</div>
+            <h3>Raund tugadi!</h3>
+            <p data-round-score></p>
+            <button class="button button--primary" type="button" data-new-round>
+              <span>Yangi tasodifiy savollar</span><span class="button__arrow" aria-hidden="true">↻</span>
+            </button>
+          </div>
+          <button class="claim-gift" type="button" data-claim-gift disabled>
+            <span data-gift-button-label>50 coin yig‘ib, sovg‘ani och</span><span aria-hidden="true">♡</span>
+          </button>
+          <p class="storage-notice" data-storage-notice aria-live="polite"></p>
+        </div>
+      </section>
+
+      <div class="celebration" role="dialog" aria-modal="true" aria-labelledby="celebration-title" hidden>
+        <button class="celebration__close" type="button" aria-label="Yopish">×</button>
+        <div class="celebration__heart" aria-hidden="true">♡</div>
+        <p class="eyebrow">eng katta sovg‘a — sening o‘zing</p>
+        <h2 id="celebration-title">Senga bir<br><span>ulkan quchoq!</span></h2>
+        <p>Bu kichkina sahifa tugadi, lekin senga bo‘lgan mehrim tugamaydi. Buguning chiroyli o‘tsin, sevgilim.</p>
+        <button class="button button--primary" type="button" data-close-celebration>
+          <span>Maktubga qaytish</span><span class="button__arrow" aria-hidden="true">♡</span>
+        </button>
+      </div>
+      <div class="confetti" aria-hidden="true"></div>
+
+      <footer class="footer"><span>yurakdan tayyorlandi</span><span aria-hidden="true">✦</span><span>faqat sen uchun</span></footer>
+    </main>
+  </body>
+</html>
